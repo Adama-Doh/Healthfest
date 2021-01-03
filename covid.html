@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+
+ 
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Healthfest - Covid </title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link href="../assets/vendor/fonts/circular-std/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/libs/css/style.css">
+    <link rel="stylesheet" href="../assets/vendor/fonts/fontawesome/css/fontawesome-all.css">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap-select/css/bootstrap-select.css">
+</head>
+
+<body>
+    <!-- ============================================================== -->
+    <!-- main wrapper -->
+    <!-- ============================================================== -->
+    <div class="dashboard-main-wrapper">
+        <!-- ============================================================== -->
+        <!-- navbar -->
+        <!-- ============================================================== -->
+       <div class="dashboard-header">
+            <nav class="navbar navbar-expand-lg bg-white fixed-top">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/foundation-logo.jpg" alt="" class="navbar-brand-logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto navbar-right-top">
+                        <li class="nav-item">
+                            <div id="custom-search" class="top-search-bar">
+                                <input class="form-control" type="text" placeholder="Search..">
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown notification">
+                            <a class="nav-link nav-icons" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"><i class="fas fa-fw fa-bell"></i> <span
+                                    class="indicator"></span></a>
+                        </li>
+                        <li class="nav-item dropdown connection">
+                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"> <i class="fas fa-fw fa-th"></i> </a>
+                        </li>
+                        <li class="nav-item dropdown nav-user">
+                            <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
+                                    src="../assets/images/avatar-1.jpg" alt=""
+                                    class="user-avatar-md rounded-circle"></a>
+                            <div class="dropdown-menu dropdown-menu-right nav-user-dropdown"
+                                aria-labelledby="navbarDropdownMenuLink2">
+                                <div class="nav-user-info">
+                                    <h5 class="mb-0 text-white nav-user-name">
+                                        Full Name</h5>
+                                    <span class="status"></span><span class="ml-2">Available</span>
+                                </div>
+                                <a class="dropdown-item" href="settings.html"><i class="fas fa-cog mr-2"></i>Setting</a>
+                                <a class="dropdown-item" href="#"><i class="fas fa-power-off mr-2"></i>Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- ============================================================== -->
+        <!-- end navbar -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- left sidebar -->
+        <!-- ============================================================== -->
+        <div class="nav-left-sidebar sidebar-dark">
+            <div class="menu-list">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="d-xl-none d-lg-none" href="#">Dashboard</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav flex-column">
+                            <li class="nav-divider mt-4">
+                                Menu
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html"><i class="fa  fas fa-user-plus"></i>Patient Bio</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active" href="covid.html"><i class="fa fas fa-certificate"></i>Covid-19</a>  
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="anthropometry.html"><i class="fa fas fa-balance-scale"></i>Anthropometry</a>  
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="screening.html"><i class="fa fas fa-stethoscope"></i>Screening Area</a>  
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="medical.html"><i class="fa fas fa-plus-square"></i>Medical</a>  
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="pharmacy.html"><i class="fa fas fa-capsules"></i>Pharmacy</a>  
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="settings.html"><i class="fa fas fa-cog"></i>Settings</a>  
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="archive.html"><i class="fa fas fa-fw fa-archive"></i>Archive</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="logout.html"><i class="fa fas fa-fw fa-sign-out-alt"></i>Logout</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- ============================================================== -->
+        <!-- end left sidebar -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- wrapper  -->
+        <!-- ============================================================== -->
+        <div class="dashboard-wrapper">
+            <div class="container-fluid dashboard-content">
+                <!-- ============================================================== -->
+                <!-- pageheader -->
+                <!-- ============================================================== -->
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="page-header">
+                            <h2 class="pageheader-title">Covid-19</h2>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- end pageheader -->
+                <!-- ============================================================== -->
+                
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="card">
+                            <form class="needs-validation" novalidate>
+                                <!-- 1st Form -->
+                                <div class="step step-1 active">
+                                    <h5 class="card-header">Patient Details <span class="card-index">1 / 4</span></h5>
+                                    <!-- Card Body -->
+                                    <div class="card-body">
+                                        <!-- 1st Row Start -->
+                                        <div class="form-group row">
+                                            <label class="col-12 col-sm-3 col-form-label mr-5">Patient ID</label>
+                                            <div class="col-12 col-sm-8 col-lg-6">
+                                                <input type="text" required="" placeholder="e.g. SN-2021-89" class="form-control">
+                                            </div>
+                                        </div>
+                                        <!-- 1st Row End -->
+
+                                        <!-- Buttons -->
+                                        <div class="form-group row text-right">
+                                            <div class="col">
+                                                <button type="button" class="btn btn-space btn-primary next-btn">Next</button>
+                                            </div>
+                                        </div>
+                                        <!-- Buttons -->
+                                    </div>
+                                    <!-- Card Body -->
+                                </div>
+                                <!-- 1st Form -->
+
+                                <!-- 2nd Form -->
+                                <div class="step step-2">
+                                    <h5 class="card-header">Covid-19 Screening<span class="card-index">2 / 4</span></h5>
+                                    <!-- Card Body -->
+                                    <div class="card-body">
+                                        <div class="form-group row">
+                                            <label class="col-12 col-sm-3 col-form-label mr-5">Signs and Symptoms of Covid-19</label>
+                                            <div class="col-12 col-sm-8 col-lg-6">
+                                                <table class="table table-striped mb-5">
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="row">
+                                                                <input type="checkbox" name="cough" id="cough" class="mr-5">
+                                                                <label for="cough">Cough</label>
+                                                            </th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">
+                                                                <input type="checkbox" name="runningNose" id="runningNose" class="mr-5">
+                                                                <label for="runningNose">Running Nose</label>
+                                                            </th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">
+                                                                <input type="checkbox" name="shortOfBreath" id="shortOfBreath" class="mr-5">
+                                                                <label for="shortOfBreath">Short of Breath</label>
+                                                            </th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">
+                                                                <input type="checkbox" name="soreThroat" id="soreThroat" class="mr-5">
+                                                                <label for="soreThroat">Sore Throat</label>
+                                                            </th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">
+                                                                <input type="checkbox" name="difficultyInBreathing" id="difficultyInBreathing" class="mr-5">
+                                                                <label for="difficultyInBreathing">Difficulty in Breathing</label>
+                                                            </th>
+                                                        </tr>
+                                                            
+                                                        <tr>
+                                                            <th scope="row">
+                                                                <input type="checkbox" name="diarrahea" id="diarrahea" class="mr-5">
+                                                                <label for="diarrahea">Diarrahea</label>
+                                                            </th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">
+                                                                <input type="checkbox" name="vomiting" id="vomiting" class="mr-5">
+                                                                <label for="vomiting">Vomiting</label>
+                                                            </th>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+
+                                                <div class="card">
+                                                    <h5 class="card-header">Others</h5>
+                                                    <div class="card-body">
+
+                                                        <textarea name="others" id="others" class="form-control hidden-box"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Buttons -->
+                                        <div class="form-group row text-right">
+                                            <div class="col">
+                                                <button type="button" class="btn btn-space btn-secondary previous-btn">Go Back</button>
+                                                <button type="button" class="btn btn-space btn-primary next-btn">Next</button>
+                                            </div>
+                                        </div>
+                                        <!-- Buttons -->
+                                    </div>
+                                    <!-- Card Body -->
+                                </div>
+                                <!-- 2nd Form -->
+
+
+                                <!-- 3rd Form -->
+                                <div class="step step-3">
+                                    <h5 class="card-header">Covid-19 Screening<span class="card-index">3 / 4</span></h5>
+                                    <!-- Card Body -->
+                                    <div class="card-body">
+                                        <div class="form-group row">
+                                            <label class="col-12 col-sm-3 col-form-label mr-5">Covid-19 History Check</label>
+                                            <div class="col-12 col-sm-8 col-lg-6">
+                                                <table class="table table-striped">
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="row">
+                                                                <input type="checkbox" name="recentContact" id="recentContact" class="mr-5">
+                                                                <label for="recentContact">Any recent contact with infected person ?</label>
+                                                            </th>
+                                                        <tr>
+                                                            <th scope="row">
+                                                                <input type="checkbox" name="healthFacilityWorker" id="healthFacilityWorker" class="mr-5">
+                                                                <label for="healthFacilityWorker">Work in health facility</label>
+                                                            </th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">
+                                                                <input type="checkbox" name="testedPositive" id="testedPositive" class="mr-5">
+                                                                <label for="testedPositive">Tested positive tocovid-19 in the past</label>
+                                                            </th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">
+                                                                <input type="checkbox" name="isolatedCenter" id="isolatedCenter" class="mr-5">
+                                                                <label for="isolatedCenter">Recently been to an isolated / treatment center</label>
+                                                            </th>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+
+                                        <!-- Buttons -->
+                                        <div class="form-group row text-right">
+                                            <div class="col">
+                                                <button type="button" class="btn btn-space btn-secondary previous-btn">Go Back</button>
+                                                <button type="button" class="btn btn-space btn-primary next-btn">Next</button>
+                                            </div>
+                                        </div>
+                                        <!-- Buttons -->
+                                    </div>
+                                    <!-- Card Body -->
+                                </div>
+                                <!-- 3rd Form -->
+
+                                <!-- 4th Form -->
+                                <div class="step step-4">
+                                    <h5 class="card-header">Risk Assessment<span class="card-index">4 / 4</span></h5>
+                                    <!-- Card Body -->
+                                    <div class="card-body">
+                                        <div class="form-group row">
+                                            <label class="col-12 col-sm-3 col-form-label mr-5">Risk Assessment</label>
+                                            <div class="col-12 col-sm-8 col-lg-6">
+                                                <select class="form-control">
+                                                    <option value="noRisk">No Risk</option>
+                                                    <option value="low">Low Risk</option>
+                                                    <option value="medium">Medium Risk</option>
+                                                    <option value="high">High Risk</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Buttons -->
+                                        <div class="form-group row text-right">
+                                            <div class="col">
+                                                <button type="button" class="btn btn-space btn-secondary previous-btn">Go Back</button>
+                                                <button type="submit" class="btn btn-space btn-primary submit-btn">Submit</button>
+                                            </div>
+                                        </div>
+                                        <!-- Buttons -->
+                                    </div>
+                                    <!-- Card Body -->
+                                </div>
+                                <!-- 4th Form -->
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!-- ============================================================== -->
+        <!-- end main wrapper -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- end main wrapper -->
+    <!-- ============================================================== -->
+    
+    <script src="assets/libs/js/multi-step-form.js"></script>
+
+    <!-- Optional JavaScript -->
+    <script src="../assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="../assets/vendor/slimscroll/jquery.slimscroll.js"></script>
+    <script src="../assets/libs/js/main-js.js"></script>
+    <script src="../assets/vendor/bootstrap-select/js/bootstrap-select.js"></script>
+
+</body>
+ 
+</html>

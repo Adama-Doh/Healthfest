@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en">
+
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Healthfest | Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link href="../assets/vendor/fonts/circular-std/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/libs/css/style.css">
+    <link rel="stylesheet" href="../assets/vendor/fonts/fontawesome/css/fontawesome-all.css">
+</head>
+
+<body>
+    <!-- ============================================================== -->
+    <!-- main wrapper -->
+    <!-- ============================================================== -->
+    <div class="dashboard-main-wrapper">
+        <!-- ============================================================== -->
+        <!-- navbar -->
+        <!-- ============================================================== -->
+        <div class="dashboard-header">
+            <nav class="navbar navbar-expand-lg bg-white fixed-top">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/foundation-logo.jpg" alt="" class="navbar-brand-logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto navbar-right-top">
+                        <li class="nav-item">
+                            <div id="custom-search" class="top-search-bar">
+                                <input class="form-control" type="text" placeholder="Search..">
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown notification">
+                            <a class="nav-link nav-icons" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"><i class="fas fa-fw fa-bell"></i> <span
+                                    class="indicator"></span></a>
+                            <!-- <ul class="dropdown-menu dropdown-menu-right notification-dropdown">
+                                <li>
+                                    <div class="notification-title"> Notification</div>
+                                    <div class="notification-list">
+                                        <div class="list-group">
+                                            <a href="#" class="list-group-item list-group-item-action active">
+                                                <div class="notification-info">
+                                                    <div class="notification-list-user-img"><img
+                                                            src="../assets/images/avatar-2.jpg" alt=""
+                                                            class="user-avatar-md rounded-circle"></div>
+                                                    <div class="notification-list-user-block"><span
+                                                            class="notification-list-user-name">Jeremy
+                                                            Rakestraw</span>accepted your invitation to join the team.
+                                                        <div class="notification-date">2 min ago</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="list-group-item list-group-item-action">
+                                                <div class="notification-info">
+                                                    <div class="notification-list-user-img"><img
+                                                            src="../assets/images/avatar-3.jpg" alt=""
+                                                            class="user-avatar-md rounded-circle"></div>
+                                                    <div class="notification-list-user-block"><span
+                                                            class="notification-list-user-name">
+                                                            John Abraham</span>is now following you
+                                                        <div class="notification-date">2 days ago</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="list-group-item list-group-item-action">
+                                                <div class="notification-info">
+                                                    <div class="notification-list-user-img"><img
+                                                            src="../assets/images/avatar-4.jpg" alt=""
+                                                            class="user-avatar-md rounded-circle"></div>
+                                                    <div class="notification-list-user-block"><span
+                                                            class="notification-list-user-name">Monaan Pechi</span> is
+                                                        watching your main repository
+                                                        <div class="notification-date">2 min ago</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="list-group-item list-group-item-action">
+                                                <div class="notification-info">
+                                                    <div class="notification-list-user-img"><img
+                                                            src="../assets/images/avatar-5.jpg" alt=""
+                                                            class="user-avatar-md rounded-circle"></div>
+                                                    <div class="notification-list-user-block"><span
+                                                            class="notification-list-user-name">Jessica
+                                                            Caruso</span>accepted your invitation to join the team.
+                                                        <div class="notification-date">2 min ago</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="list-footer"> <a href="#">View all notifications</a></div>
+                                </li>
+                            </ul> -->
+                        </li>
+                        <li class="nav-item dropdown connection">
+                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"> <i class="fas fa-fw fa-th"></i> </a>
+                            <!-- <ul class="dropdown-menu dropdown-menu-right connection-dropdown">
+                                <li class="connection-list">
+                                    <div class="row">
+                                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                                            <a href="#" class="connection-item"><img src="../assets/images/github.png"
+                                                    alt=""> <span>Github</span></a>
+                                        </div>
+                                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                                            <a href="#" class="connection-item"><img src="../assets/images/dribbble.png"
+                                                    alt=""> <span>Dribbble</span></a>
+                                        </div>
+                                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                                            <a href="#" class="connection-item"><img src="../assets/images/dropbox.png"
+                                                    alt=""> <span>Dropbox</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                                            <a href="#" class="connection-item"><img
+                                                    src="../assets/images/bitbucket.png" alt="">
+                                                <span>Bitbucket</span></a>
+                                        </div>
+                                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                                            <a href="#" class="connection-item"><img
+                                                    src="../assets/images/mail_chimp.png" alt=""><span>Mail
+                                                    chimp</span></a>
+                                        </div>
+                                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                                            <a href="#" class="connection-item"><img src="../assets/images/slack.png"
+                                                    alt=""> <span>Slack</span></a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="conntection-footer"><a href="#">More</a></div>
+                                </li>
+                            </ul> -->
+                        </li>
+                        <li class="nav-item dropdown nav-user">
+                            <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
+                                    src="../assets/images/avatar-1.jpg" alt=""
+                                    class="user-avatar-md rounded-circle"></a>
+                            <div class="dropdown-menu dropdown-menu-right nav-user-dropdown"
+                                aria-labelledby="navbarDropdownMenuLink2">
+                                <div class="nav-user-info">
+                                    <h5 class="mb-0 text-white nav-user-name">
+                                        Full Name</h5>
+                                    <span class="status"></span><span class="ml-2">Available</span>
+                                </div>
+                                <a class="dropdown-item" href="settings.html"><i class="fas fa-cog mr-2"></i>Setting</a>
+                                <a class="dropdown-item" href="#"><i class="fas fa-power-off mr-2"></i>Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- ============================================================== -->
+        <!-- end navbar -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- left sidebar -->
+        <!-- ============================================================== -->
+        <div class="nav-left-sidebar sidebar-dark">
+            <div class="menu-list">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="d-xl-none d-lg-none" href="#">Dashboard</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav flex-column">
+                            <li class="nav-divider mt-4">
+                                Menu
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html"><i class="fa  fas fa-user-plus"></i>Patient Bio</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="covid.html"><i class="fa fas fa-certificate"></i>Covid-19</a>  
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="anthropometry.html"><i class="fa fas fa-balance-scale"></i>Anthropometry</a>  
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="screening.html"><i class="fa fas fa-stethoscope"></i>Screening Area</a>  
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="medical.html"><i class="fa fas fa-plus-square"></i>Medical</a>  
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="pharmacy.html"><i class="fa fas fa-capsules"></i>Pharmacy</a>  
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active" href="settings.html"><i class="fa fas fa-cog"></i>Settings</a>  
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="archive.html"><i class="fa fas fa-fw fa-archive"></i>Archive</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fa fas fa-fw fa-sign-out-alt"></i>Logout</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- ============================================================== -->
+        <!-- end left sidebar -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- wrapper  -->
+        <!-- ============================================================== -->
+        <div class="dashboard-wrapper">
+            <div class="container-fluid dashboard-content">
+                <!-- ============================================================== -->
+                <!-- pageheader -->
+                <!-- ============================================================== -->
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="page-header">
+                            <h2 class="pageheader-title">Settings</h2>
+                        </div>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- end pageheader -->
+                <!-- ============================================================== -->
+
+                
+                
+                <div class="row">
+                        <!-- ============================================================== -->
+                        <!-- profile -->
+                        <!-- ============================================================== -->
+                        <div class="col-xl-4 col-lg-3 col-md-5 col-sm-12 col-12">
+                            <!-- ============================================================== -->
+                            <!-- card profile -->
+                            <!-- ============================================================== -->
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="user-avatar text-center d-block">
+                                        <img src="assets/images/avatar-1.jpg" alt="User Avatar" class="rounded-circle user-avatar-xxl">
+                                    </div>
+                                    <div class="text-center">
+                                        <h2 class="font-24 mb-0">Full Name </h2>
+                                        <p>Doctor @Healthfest</p>
+                                    </div>
+                                </div>
+                                <div class="card-body border-top">
+                                    <h3 class="font-16">Contact Information</h3>
+                                    <div class="">
+                                        <ul class="list-unstyled mb-0">
+                                        <li class="mb-2"><i class="fas fa-fw fa-envelope mr-2"></i>email.address@mail.com</li>
+                                        <li class="mb-0"><i class="fas fa-fw fa-phone mr-2"></i>(+233) 123 4567</li>
+                                    </ul>
+                                    </div>
+                                </div>
+                                
+                                
+                            </div>
+                            <!-- ============================================================== -->
+                            <!-- end card profile -->
+                            <!-- ============================================================== -->
+                        </div>
+                        <!-- ============================================================== -->
+                        <!-- end profile -->
+                        <!-- ============================================================== -->
+                         <!-- ============================================================== -->
+                        <!-- campaign data -->
+                        <!-- ============================================================== -->
+                        <div class="col-xl-8 col-lg-9 col-md-7 col-sm-12 col-12">
+                            <!-- ============================================================== -->
+                            <!-- campaign tab one -->
+                            <!-- ============================================================== -->
+                            <div class="influence-profile-content pills-regular">
+                                <ul class="nav nav-pills mb-3 nav-justified" id="pills-tab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="pills-campaign-tab" data-toggle="pill" href="#pills-campaign" role="tab" aria-controls="pills-campaign" aria-selected="true">Profile</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="pills-msg-tab" data-toggle="pill" href="#pills-msg" role="tab" aria-controls="pills-msg" aria-selected="false">Password</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="pills-campaign" role="tabpanel" aria-labelledby="pills-campaign-tab">
+                                        <div class="card">
+                                            <h5 class="card-header">Edit Profile</h5>
+                                            <div class="card-body">
+                                                <form action="#" id="basicform" data-parsley-validate="">
+                                                    <div class="form-group mb-3">
+                                                        <label for="inputUserName">User Name</label>
+                                                        <input id="inputUserName" type="text" name="name" data-parsley-trigger="change" required="" autocomplete="off" class="form-control">
+                                                    </div>
+                                                    <div class="form-group mb-3">
+                                                        <label for="inputEmail">Email</label>
+                                                        <input id="inputEmail" type="email" required="" class="form-control">
+                                                    </div>
+                                                    <div class="form-group mb-3">
+                                                        <label for="inputContactNumber">Contact Number</label>
+                                                        <input id="inputContactNumber" type="number" required="" class="form-control">
+                                                    </div>
+                                                    
+                                                    <div class="row">
+                                                        <div class="col-sm-12">
+                                                            <p class="text-right">
+                                                                <button type="submit" class="btn btn-block btn-primary">Submit</button>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    <div class="tab-pane fade" id="pills-msg" role="tabpanel" aria-labelledby="pills-msg-tab">
+                                        <div class="card">
+                                            <h5 class="card-header">Change Password</h5>
+                                            <div class="card-body">
+                                                <form action="#" id="basicform" data-parsley-validate="">
+                                                    <div class="form-group mb-3">
+                                                        <label for="inputOldPassword">Old Password</label>
+                                                        <input id="inputOldPassword" type="password" required="" class="form-control">
+                                                    </div>
+                                                    <div class="form-group mb-3">
+                                                        <label for="inputNewPassword">New Password</label>
+                                                        <input id="inputNewPassword" type="password" required="" class="form-control">
+                                                    </div>
+                                                    <div class="form-group mb-4">
+                                                        <label for="inputRepeatPassword">Confirm New Password</label>
+                                                        <input id="inputRepeatPassword" data-parsley-equalto="#inputPassword" type="password" required="" class="form-control">
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-sm-12">
+                                                            <p class="text-right">
+                                                                <button type="submit" class="btn btn-block btn-primary">Submit</button>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ============================================================== -->
+                            <!-- end campaign tab one -->
+                            <!-- ============================================================== -->
+                        </div>
+                        <!-- ============================================================== -->
+                        <!-- end campaign data -->
+                        <!-- ============================================================== -->
+                    </div>
+                
+                
+
+            </div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- end main wrapper -->
+    <!-- ============================================================== -->
+    <!-- Optional JavaScript -->
+    <script src="../assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="../assets/vendor/slimscroll/jquery.slimscroll.js"></script>
+    <script src="../assets/vendor/parsley/parsley.js"></script>
+    <script src="../assets/libs/js/main-js.js"></script>
+    <script>
+        $('#form').parsley();
+    </script>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+</body>
+
+</html>

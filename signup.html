@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Vodafone Healthfest | Sign In</title>
+    <title>Vodafone Healthfest | Sign Up</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -45,6 +45,18 @@
               <form class="px-3">
                 <!-- Input Box -->
                 <div class="form-input mb-4">
+                  <label for="fullname" class="form-label">Full Name</label>
+                  <input
+                    type="name"
+                    name=""
+                    placeholder="eg. Kwabena Sarpong"
+                    autocomplete="off"
+                    required
+                  />
+                </div>
+
+                <!-- Username -->
+                <div class="form-input mb-4">
                   <label for="username" class="form-label">Username</label>
                   <input
                     type="name"
@@ -54,6 +66,8 @@
                     required
                   />
                 </div>
+
+                <!-- Password -->
                 <div class="form-input mb-5">
                   <label for="password" class="form-label">Password</label>
                   <input
@@ -64,36 +78,15 @@
                     required
                   />
                 </div>
-                <div class="row mb-5">
-                  <!-- Remeber Checkbox -->
-                  <div class="col-6 d-flex">
-                    <div class="custom-control custom-checkbox">
-                      <input
-                        type="checkbox"
-                        name=""
-                        id="cb1"
-                        class="custom-control-input"
-                      />
-                      <label for="cb1" class="custom-control-label px-4"
-                        >Remember Me</label
-                      >
-                    </div>
-                  </div>
-                  <!-- Forgot Password -->
-                  <div class="col-6 text-right">
-                    <a href="reset.html" class="forgot-link"
-                      >Forgot Password?</a
-                    >
-                  </div>
-                </div>
+
                 <!-- Login Button -->
                 <div class="mb-5">
-                  <button type="submit" class="btn btn-block">Sign In</button>
+                  <button type="submit" class="btn btn-block">Sign Up</button>
                 </div>
                 <!-- Sign Up -->
                 <div class="text-center mb-5 text-black">
-                  Don't have an account?
-                  <a class="register-link" href="signup.html">Sign Up</a>
+                  Already having an account?
+                  <a class="register-link" href="patient-bio.html">Sign in</a>
                 </div>
               </form>
             </div>

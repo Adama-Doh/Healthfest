@@ -7,12 +7,12 @@ body {
     font-weight: 400;
 }
 
-.container-fluid{
+.container-fluid .bg-white{
     background-color: fff;
 }
 
 .doctors-image-container {
-    background: url(../img/healthfest_bg2.jpg) right no-repeat;
+    background: url(../../images/healthfest_bg2.jpg) right no-repeat;
     background-size: cover;
     height: 100vh;
 }
@@ -157,15 +157,4 @@ body {
     /* text-decoration: none; */
     font-weight: 600;
     color: #e80000;
-}
-
-/* Navbar */
-.navbar-brand {
-    height: 60px;
-    margin: 10px;
-}
-
-.collapse .navbar-collapse .page-title h3{
-    margin-left: 10px;
-    text-transform: capitalize;
 }

@@ -428,8 +428,8 @@ address {} */
 }
 
 .custom-radio .custom-control-input:checked~.custom-control-label::before {
-    background-color: #5969ff;
-    border-color: #5969ff;
+    background-color: #e80000;
+    border-color: #e80000;
 }
 
 .custom-control-input:disabled~.custom-control-label::before {
@@ -2738,13 +2738,13 @@ clip-path: polygon(10% 25%, 10% 0, 35% 0%, 65% 0%, 90% 0, 90% 25%, 90% 50%, 91% 
 
 .btn-secondary {
     color: #fff;
-    background-color: #ff407b;
+    background-color: #ba2727;
     border-color: #ff407b;
 }
 
 .btn-secondary:hover {
     color: #fff;
-    background-color: #f0346e;
+    background-color: #f80000;
     border-color: #f0346e;
 }
 

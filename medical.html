@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+
+ 
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Healthfest - Medical </title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link href="assets/vendor/fonts/circular-std/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/libs/css/style.css">
+    <link rel="stylesheet" href="assets/vendor/fonts/fontawesome/css/fontawesome-all.css">
+    <link rel="stylesheet" href="assets/vendor/bootstrap-select/css/bootstrap-select.css">
+</head>
+
+<body>
+    <!-- ============================================================== -->
+    <!-- main wrapper -->
+    <!-- ============================================================== -->
+    <div class="dashboard-main-wrapper">
+        <!-- ============================================================== -->
+        <!-- navbar -->
+        <!-- ============================================================== -->
+       <div class="dashboard-header">
+            <nav class="navbar navbar-expand-lg bg-white fixed-top">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/foundation-logo.jpg" alt="" class="navbar-brand-logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto navbar-right-top">
+                        <li class="nav-item">
+                            <div id="custom-search" class="top-search-bar">
+                                <input class="form-control" type="text" placeholder="Search..">
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown notification">
+                            <a class="nav-link nav-icons" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"><i class="fas fa-fw fa-bell"></i> <span
+                                    class="indicator"></span></a>
+                        </li>
+                        <li class="nav-item dropdown connection">
+                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"> <i class="fas fa-fw fa-th"></i> </a>
+                        </li>
+                        <li class="nav-item dropdown nav-user">
+                            <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
+                                    src="assets/images/avatar-1.jpg" alt=""
+                                    class="user-avatar-md rounded-circle"></a>
+                            <div class="dropdown-menu dropdown-menu-right nav-user-dropdown"
+                                aria-labelledby="navbarDropdownMenuLink2">
+                                <div class="nav-user-info">
+                                    <h5 class="mb-0 text-white nav-user-name">
+                                        Full Name</h5>
+                                    <span class="status"></span><span class="ml-2">Available</span>
+                                </div>
+                                <a class="dropdown-item" href="settings.html"><i class="fas fa-cog mr-2"></i>Setting</a>
+                                <a class="dropdown-item" href="#"><i class="fas fa-power-off mr-2"></i>Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- ============================================================== -->
+        <!-- end navbar -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- left sidebar -->
+        <!-- ============================================================== -->
+        <div class="nav-left-sidebar sidebar-dark">
+            <div class="menu-list">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="d-xl-none d-lg-none" href="#">Dashboard</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav flex-column">
+                            <li class="nav-divider mt-4">
+                                Menu
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="patient-bio.html"><i class="fa  fas fa-user-plus"></i>Patient Bio</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="covid.html"><i class="fa fas fa-certificate"></i>Covid-19</a>  
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="anthropometry.html"><i class="fa fas fa-balance-scale"></i>Anthropometry</a>  
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="screening.html"><i class="fa fas fa-stethoscope"></i>Screening Area</a>  
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active" href="medical.html"><i class="fa fas fa-plus-square"></i>Medical</a>  
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="pharmacy.html"><i class="fa fas fa-capsules"></i>Pharmacy</a>  
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="settings.html"><i class="fa fas fa-cog"></i>Settings</a>  
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="archive.html"><i class="fa fas fa-fw fa-archive"></i>Archive</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html"><i class="fa fas fa-fw fa-sign-out-alt"></i>Logout</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- ============================================================== -->
+        <!-- end left sidebar -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- wrapper  -->
+        <!-- ============================================================== -->
+        <div class="dashboard-wrapper">
+            <div class="container-fluid dashboard-content">
+                <!-- ============================================================== -->
+                <!-- pageheader -->
+                <!-- ============================================================== -->
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="page-header">
+                            <h2 class="pageheader-title">Medical</h2>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- end pageheader -->
+                <!-- ============================================================== -->
+                
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="card">
+                            <form class="needs-validation" novalidate>
+                                <!-- 1st Form -->
+                                <div class="step step-1 active">
+                                    <h5 class="card-header">Patient Details <span class="card-index">1 / 5</span></h5>
+                                    <!-- Card Body -->
+                                    <div class="card-body">
+                                        <!-- 1st Row Start -->
+                                        <div class="form-group row">
+                                            <label class="col-12 col-sm-3 col-form-label text-sm-right">Patient ID</label>
+                                            <div class="col-12 col-sm-8 col-lg-6">
+                                                <input type="text" required="" placeholder="e.g. SN-2021-89" class="form-control">
+                                            </div>
+                                        </div>
+                                        <!-- 1st Row End -->
+
+                                        <!-- Buttons -->
+                                        <div class="form-group row text-right">
+                                            <div class="col">
+                                                <button type="button" class="btn btn-space btn-primary next-btn">Next</button>
+                                            </div>
+                                        </div>
+                                        <!-- Buttons -->
+                                    </div>
+                                    <!-- Card Body -->
+                                </div>
+                                <!-- 1st Form -->
+
+                                <!-- 2nd Form -->
+                                <div class="step step-2">
+                                    <h5 class="card-header">Screening<span class="card-index">2 / 5</span></h5>
+                                    <!-- Card Body -->
+                                    <div class="card-body">
+
+                                        <div class="row">
+                                            <!-- left -->
+                                            <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
+                                                <div class="form-group card">
+                                                    <h5 class="card-header">Presenting Complaint</h5>
+                                                    <textarea name="" id=""  class="form-control hidden-box"></textarea>
+                                                </div>
+
+                                                <div class="form-group card">
+                                                    <h5 class="card-header">History of Presenting </h5>
+                                                    <textarea name="" id=""  class="form-control hidden-box"></textarea>
+                                                </div>
+
+                                                <div class="form-group card">
+                                                    <h5 class="card-header">ODQ</h5>
+                                                    <textarea name="" id=""  class="form-control hidden-box"></textarea>
+                                                </div>
+                                            </div>
+
+                                            <!-- right -->
+                                            <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <table class="table table-striped">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col">Disease</th>
+                                                                    <th scope="col">Medical Histroy</th>
+                                                                    <th scope="col">Family History</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <!-- Cough -->
+                                                                <tr>
+                                                                    <td>Hypertension</td>
+                                                                    <td>
+                                                                        <label for="hivPositiveMedical" class="custom-control custom-checkbox custom-control-inline">
+                                                                        <input type="checkbox" id="hivPositiveMedical" name="hiv" value="yes" class="custom-control-input">
+                                                                            <span class="custom-control-label"></span>
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label for="hivNegaviteFamily" class="custom-control custom-checkbox custom-control-inline">
+                                                                        <input type="checkbox" id="hivNegaviteFamily" name="hiv" value="yes" class="custom-control-input">
+                                                                            <span class="custom-control-label"></span>
+                                                                        </label>
+                                                                    </td>                                                                
+                                                                </tr>
+
+                                                                <!-- Diabetes Melitus -->
+                                                                <tr>
+                                                                    <td>Diabetes Melitus</td>
+                                                                    <td>
+                                                                        <label for="malariaPositiveMedical" class="custom-control custom-checkbox custom-control-inline">
+                                                                        <input type="checkbox" id="malariaPositiveMedical" name="malaria" value="yes" class="custom-control-input">
+                                                                            <span class="custom-control-label"></span>
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label for="malariaNegaviteFamily" class="custom-control custom-checkbox custom-control-inline">
+                                                                        <input type="checkbox" id="malariaNegaviteFamily" name="malaria" value="yes" class="custom-control-input">
+                                                                            <span class="custom-control-label"></span>
+                                                                        </label>
+                                                                    </td>
+                                                                </tr>
+
+                                                                <!-- Bronchial -->
+                                                                <tr>
+                                                                    <td>Bronchial</td>
+                                                                    <td>
+                                                                        <label for="typhoidPositiveMedical" class="custom-control custom-checkbox custom-control-inline">
+                                                                        <input type="checkbox" id="typhoidPositiveMedical" name="typhoid" value="yes" class="custom-control-input">
+                                                                            <span class="custom-control-label"></span>
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label for="typhoidNegaviteFamily" class="custom-control custom-checkbox custom-control-inline">
+                                                                        <input type="checkbox" id="typhoidNegaviteFamily" name="typhoid" value="yes" class="custom-control-input">
+                                                                            <span class="custom-control-label"></span>
+                                                                        </label>
+                                                                    </td>
+                                                                </tr>
+
+                                                                <!-- Coronary Artery Disease -->
+                                                                <tr>
+                                                                    <td>Coronary Artery Disease</td>
+                                                                    <td>
+                                                                        <label for="coronaryMedical" class="custom-control custom-checkbox custom-control-inline">
+                                                                        <input type="checkbox" id="coronaryMedical" name="hepititis" value="yes" class="custom-control-input">
+                                                                            <span class="custom-control-label"></span>
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label for="coronaryFamily" class="custom-control custom-checkbox custom-control-inline">
+                                                                        <input type="checkbox" id="coronaryFamily" name="hepititis" value="yes" class="custom-control-input">
+                                                                            <span class="custom-control-label"></span>
+                                                                        </label>
+                                                                    </td>
+                                                                </tr>
+
+                                                                <!-- Epilepsy -->
+                                                                <tr>
+                                                                    <td>Epilepsy</td>
+                                                                    <td>
+                                                                        <label for="covidPositiveMedical" class="custom-control custom-checkbox custom-control-inline">
+                                                                        <input type="checkbox" id="covidPositiveMedical" name="covid" value="yes" class="custom-control-input">
+                                                                            <span class="custom-control-label"></span>
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label for="covidNegaviteFamily" class="custom-control custom-checkbox custom-control-inline">
+                                                                        <input type="checkbox" id="covidNegaviteFamily" name="covid" value="yes" class="custom-control-input">
+                                                                            <span class="custom-control-label"></span>
+                                                                        </label>
+                                                                    </td>
+                                                                </tr>
+
+                                                                <!-- Stroke -->
+                                                                <tr>
+                                                                    <td>Stroke</td>
+                                                                    <td>
+                                                                        <label for="strokeMedical" class="custom-control custom-checkbox custom-control-inline">
+                                                                        <input type="checkbox" id="strokeMedical" name="covid" value="yes" class="custom-control-input">
+                                                                            <span class="custom-control-label"></span>
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label for="strokeFamily" class="custom-control custom-checkbox custom-control-inline">
+                                                                        <input type="checkbox" id="strokeFamily" name="covid" value="yes" class="custom-control-input">
+                                                                            <span class="custom-control-label"></span>
+                                                                        </label>
+                                                                    </td>
+                                                                </tr>
+
+                                                                <!-- Kidney Failure -->
+                                                                <tr>
+                                                                    <td>Kidney Failure</td>
+                                                                    <td>
+                                                                        <label for="kidneyFailureMedical" class="custom-control custom-checkbox custom-control-inline">
+                                                                        <input type="checkbox" id="kidneyFailureMedical" name="covid" value="yes" class="custom-control-input">
+                                                                            <span class="custom-control-label"></span>
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label for="kidneyFailureFamily" class="custom-control custom-checkbox custom-control-inline">
+                                                                        <input type="checkbox" id="kidneyFailureFamily" name="covid" value="yes" class="custom-control-input">
+                                                                            <span class="custom-control-label"></span>
+                                                                        </label>
+                                                                    </td>
+                                                                </tr>
+
+                                                                <!-- Sickle Cell Disease -->
+                                                                <tr>
+                                                                    <td>Sickle Cell Disease</td>
+                                                                    <td>
+                                                                        <label for="sickleCellMedical" class="custom-control custom-checkbox custom-control-inline">
+                                                                        <input type="checkbox" id="sickleCellMedical" name="sickleCellMedical" value="yes" class="custom-control-input">
+                                                                            <span class="custom-control-label"></span>
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label for="sickleCellFamily" class="custom-control custom-checkbox custom-control-inline">
+                                                                        <input type="checkbox" id="sickleCellFamily" name="sickleCellFamily" value="yes" class="custom-control-input">
+                                                                            <span class="custom-control-label"></span>
+                                                                        </label>
+                                                                    </td>
+                                                                </tr>
+
+                                                                <!-- PUD -->
+                                                                <tr>
+                                                                    <td>PUD</td>
+                                                                    <td>
+                                                                        <label for="pudMedical" class="custom-control custom-checkbox custom-control-inline">
+                                                                        <input type="checkbox" id="pudMedical" name="covid" value="yes" class="custom-control-input">
+                                                                            <span class="custom-control-label"></span>
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label for="pudFamily" class="custom-control custom-checkbox custom-control-inline">
+                                                                        <input type="checkbox" id="pudFamily" name="covid" value="yes" class="custom-control-input">
+                                                                            <span class="custom-control-label"></span>
+                                                                        </label>
+                                                                    </td>
+                                                                </tr>
+
+                                                                <!-- Cancer -->
+                                                                <tr>
+                                                                    <td>Cancer</td>
+                                                                    <td>
+                                                                        <label for="cancerMedical" class="custom-control custom-checkbox custom-control-inline">
+                                                                        <input type="checkbox" id="cancerMedical" name="covid" value="yes" class="custom-control-input">
+                                                                            <span class="custom-control-label"></span>
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label for="cancerFamily" class="custom-control custom-checkbox custom-control-inline">
+                                                                        <input type="checkbox" id="cancerFamily" name="covid" value="yes" class="custom-control-input">
+                                                                            <span class="custom-control-label"></span>
+                                                                        </label>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <!-- Others -->
+                                                        <div class="form-group mt-4">
+                                                            <label for="others">Others</label>
+                                                            <textarea name="others" id="others" class="form-control hidden-box"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>  
+                                        </div>
+                                        
+
+                                        <!-- Buttons -->
+                                        <div class="form-group row text-right">
+                                            <div class="col">
+                                                <button type="button" class="btn btn-space btn-secondary previous-btn">Go Back</button>
+                                                <button type="button" class="btn btn-space btn-primary next-btn">Next</button>
+                                            </div>
+                                        </div>
+                                        <!-- Buttons -->
+                                    </div>
+                                    <!-- Card Body -->
+                                </div>
+                                <!-- 2nd Form -->
+
+
+                                <!-- 3rd Form -->
+                                <div class="step step-3">
+                                    <h5 class="card-header">Screening<span class="card-index">3 / 5</span></h5>
+                                    <!-- Card Body -->
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <!-- left -->
+                                            <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
+                                                <div class="form-group card">
+                                                    <h5 class="card-header">Surgical History (if applicable)</h5>
+                                                    <textarea name="" id=""  class="form-control hidden-box"></textarea>
+                                                </div>
+
+                                                <div class="form-group card">
+                                                    <h5 class="card-header">Gynecological and Obstetric History (if applicable)</h5>
+                                                    <textarea name="" id=""  class="form-control hidden-box"></textarea>
+                                                </div>
+
+                                                <div class="form-group card">
+                                                    <h5 class="card-header">Social History</h5>
+                                                    <textarea name="" id=""  class="form-control hidden-box"></textarea>
+                                                </div>
+                                            </div>
+
+                                            <!-- right -->
+                                            <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <table class="table table-striped">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col">Respiratory System</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <!-- Cough -->
+                                                                <tr>
+                                                                    <td>
+                                                                        <label for="cough" class="custom-control custom-checkbox custom-control-inline">
+                                                                        <input type="checkbox" id="cough" name="cough" value="cough" class="custom-control-input">
+                                                                            <span class="custom-control-label ml-4">Cough</span>
+                                                                        </label>
+                                                                    </td>                                                      
+                                                                </tr>
+
+                                                                <!-- Sputum -->
+                                                                <tr>
+                                                                    <td>
+                                                                        <label for="sputum" class="custom-control custom-checkbox custom-control-inline">
+                                                                        <input type="checkbox" id="sputum" name="sputum" value="sputum" class="custom-control-input">
+                                                                            <span class="custom-control-label ml-4">Sputum</span>
+                                                                        </label>
+                                                                    </td>                                                      
+                                                                </tr>
+
+                                                                <!-- Shortness of breath -->
+                                                                <tr>
+                                                                    <td>
+                                                                        <label for="shortBreath" class="custom-control custom-checkbox custom-control-inline">
+                                                                        <input type="checkbox" id="shortBreath" name="shortBreath" value="shortBreath" class="custom-control-input">
+                                                                            <span class="custom-control-label ml-4">Shortness of breath</span>
+                                                                        </label>
+                                                                    </td>                                                      
+                                                                </tr>
+                                                                
+                                                                <!-- Hemoptysis -->
+                                                                <tr>
+                                                                    <td>
+                                                                        <label for="hemoptysis" class="custom-control custom-checkbox custom-control-inline">
+                                                                        <input type="checkbox" id="hemoptysis" name="hemoptysis" value="hemoptysis" class="custom-control-input">
+                                                                            <span class="custom-control-label ml-4">Hemoptysis</span>
+                                                                        </label>
+                                                                    </td>                                                      
+                                                                </tr>
+                                                                
+                                                                <!-- Muscle Ache -->
+                                                                <tr>
+                                                                    <td>
+                                                                        <label for="muscleAche" class="custom-control custom-checkbox custom-control-inline">
+                                                                        <input type="checkbox" id="muscleAche" name="muscleAche" value="muscleAche" class="custom-control-input">
+                                                                            <span class="custom-control-label ml-4">Muscle Ache</span>
+                                                                        </label>
+                                                                    </td>                                                      
+                                                                </tr>
+                                                                
+                                                                <!-- Respiratory System -->
+                                                                <tr>
+                                                                    <td>
+                                                                        <label for="respiratorySystem" class="custom-control custom-checkbox custom-control-inline">
+                                                                        <input type="checkbox" id="respiratorySystem" name="respiratorySystem" value="respiratorySystem" class="custom-control-input">
+                                                                            <span class="custom-control-label ml-4">Respiratory System</span>
+                                                                        </label>
+                                                                    </td>                                                      
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <!-- Others -->
+                                                        <div class="form-group mt-4">
+                                                            <label for="others">Others</label>
+                                                            <textarea name="others" id="others" class="form-control hidden-box"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                
+                                            </div>  
+                                        </div>
+
+                                        <!-- Buttons -->
+                                        <div class="form-group row text-right">
+                                            <div class="col">
+                                                <button type="button" class="btn btn-space btn-secondary previous-btn">Go Back</button>
+                                                <button type="button" class="btn btn-space btn-primary next-btn">Next</button>
+                                            </div>
+                                        </div>
+                                        <!-- Buttons -->
+                                    </div>
+                                    <!-- Card Body -->
+                                </div>
+                                <!-- 3rd Form -->
+
+                                <!-- 4th Form -->
+                                <div class="step step-4">
+                                    <h5 class="card-header">Screening<span class="card-index">4 / 5</span></h5>
+                                    <!-- Card Body -->
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <!-- left -->
+                                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <table class="table table-striped">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col">Gastro Intestinal</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <!-- Vomiting -->
+                                                                <tr>
+                                                                    <td>
+                                                                        <label for="vomiting" class="custom-control custom-checkbox custom-control-inline">
+                                                                        <input type="checkbox" id="vomiting" name="vomiting" value="vomiting" class="custom-control-input">
+                                                                            <span class="custom-control-label ml-4">Vomiting</span>
+                                                                        </label>
+                                                                    </td>                                                      
+                                                                </tr>
+
+                                                                <!-- Diarrhea -->
+                                                                <tr>
+                                                                    <td>
+                                                                        <label for="diarrhea" class="custom-control custom-checkbox custom-control-inline">
+                                                                        <input type="checkbox" id="diarrhea" name="diarrhea" value="diarrhea" class="custom-control-input">
+                                                                            <span class="custom-control-label ml-4">Diarrhea</span>
+                                                                        </label>
+                                                                    </td>                                                      
+                                                                </tr>
+
+                                                                <!-- Hematemesis -->
+                                                                <tr>
+                                                                    <td>
+                                                                        <label for="hematemesis" class="custom-control custom-checkbox custom-control-inline">
+                                                                        <input type="checkbox" id="hematemesis" name="hematemesis" value="hematemesis" class="custom-control-input">
+                                                                            <span class="custom-control-label ml-4">Hematemesis</span>
+                                                                        </label>
+                                                                    </td>                                                      
+                                                                </tr>
+                                                                
+                                                                <!-- Melena -->
+                                                                <tr>
+                                                                    <td>
+                                                                        <label for="melena" class="custom-control custom-checkbox custom-control-inline">
+                                                                        <input type="checkbox" id="melena" name="melena" value="melena" class="custom-control-input">
+                                                                            <span class="custom-control-label ml-4">Melena</span>
+                                                                        </label>
+                                                                    </td>                                                      
+                                                                </tr>
+                                                                
+                                                                <!-- Abdominal Pain -->
+                                                                <tr>
+                                                                    <td>
+                                                                        <label for="abdominalPain" class="custom-control custom-checkbox custom-control-inline">
+                                                                        <input type="checkbox" id="abdominalPain" name="abdominalPain" value="abdominalPain" class="custom-control-input">
+                                                                            <span class="custom-control-label ml-4">Abdominal Pain</span>
+                                                                        </label>
+                                                                    </td>                                                      
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <!-- Others -->
+                                                        <div class="form-group mt-4">
+                                                            <label for="others">Others</label>
+                                                            <textarea name="others" id="others" class="form-control hidden-box"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- 2nd Row -->
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <table class="table table-striped">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col">Genito Urinary System</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <!-- Frequency -->
+                                                                <tr>
+                                                                    <td>
+                                                                        <label for="frequency" class="custom-control custom-checkbox custom-control-inline">
+                                                                        <input type="checkbox" id="frequency" name="frequency" value="frequency" class="custom-control-input">
+                                                                            <span class="custom-control-label ml-4">Frequency</span>
+                                                                        </label>
+                                                                    </td>                                                      
+                                                                </tr>
+
+                                                                <!-- Dysuria -->
+                                                                <tr>
+                                                                    <td>
+                                                                        <label for="dysuria" class="custom-control custom-checkbox custom-control-inline">
+                                                                        <input type="checkbox" id="dysuria" name="dysuria" value="dysuria" class="custom-control-input">
+                                                                            <span class="custom-control-label ml-4">Dysuria</span>
+                                                                        </label>
+                                                                    </td>                                                      
+                                                                </tr>
+
+                                                                <!-- Hematuria -->
+                                                                <tr>
+                                                                    <td>
+                                                                        <label for="hematuria" class="custom-control custom-checkbox custom-control-inline">
+                                                                        <input type="checkbox" id="hematuria" name="hematuria" value="hematuria" class="custom-control-input">
+                                                                            <span class="custom-control-label ml-4">Hematuria</span>
+                                                                        </label>
+                                                                    </td>                                                      
+                                                                </tr>
+                                                                
+                                                                <!-- Urgency -->
+                                                                <tr>
+                                                                    <td>
+                                                                        <label for="urgency" class="custom-control custom-checkbox custom-control-inline">
+                                                                        <input type="checkbox" id="urgency" name="urgency" value="urgency" class="custom-control-input">
+                                                                            <span class="custom-control-label ml-4">Urgency</span>
+                                                                        </label>
+                                                                    </td>                                                      
+                                                                </tr>
+                                                                
+                                                                <!-- Poor Urine Stream -->
+                                                                <tr>
+                                                                    <td>
+                                                                        <label for="poorUrine" class="custom-control custom-checkbox custom-control-inline">
+                                                                        <input type="checkbox" id="poorUrine" name="poorUrine" value="poorUrine" class="custom-control-input">
+                                                                            <span class="custom-control-label ml-4">Poor Urine Stream</span>
+                                                                        </label>
+                                                                    </td>                                                      
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <!-- Others -->
+                                                        <div class="form-group mt-4">
+                                                            <label for="others">Others</label>
+                                                            <textarea name="others" id="others" class="form-control hidden-box"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- right -->
+                                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <table class="table table-striped">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col">Nervous System</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <!-- Headache -->
+                                                                <tr>
+                                                                    <td>
+                                                                        <label for="headache" class="custom-control custom-checkbox custom-control-inline">
+                                                                        <input type="checkbox" id="headache" name="headache" value="headache" class="custom-control-input">
+                                                                            <span class="custom-control-label ml-4">Headache</span>
+                                                                        </label>
+                                                                    </td>                                                      
+                                                                </tr>
+
+                                                                <!-- Paresis -->
+                                                                <tr>
+                                                                    <td>
+                                                                        <label for="paresis" class="custom-control custom-checkbox custom-control-inline">
+                                                                        <input type="checkbox" id="paresis" name="paresis" value="paresis" class="custom-control-input">
+                                                                            <span class="custom-control-label ml-4">Paresis</span>
+                                                                        </label>
+                                                                    </td>                                                      
+                                                                </tr>
+
+                                                                <!-- Muscle Weakness -->
+                                                                <tr>
+                                                                    <td>
+                                                                        <label for="muscleWeakness" class="custom-control custom-checkbox custom-control-inline">
+                                                                        <input type="checkbox" id="muscleWeakness" name="muscleWeakness" value="muscleWeakness" class="custom-control-input">
+                                                                            <span class="custom-control-label ml-4">Muscle Weakness</span>
+                                                                        </label>
+                                                                    </td>                                                      
+                                                                </tr>
+                                                                
+                                                                <!-- Seizures -->
+                                                                <tr>
+                                                                    <td>
+                                                                        <label for="seizures" class="custom-control custom-checkbox custom-control-inline">
+                                                                        <input type="checkbox" id="seizures" name="seizures" value="seizures" class="custom-control-input">
+                                                                            <span class="custom-control-label ml-4">Seizures</span>
+                                                                        </label>
+                                                                    </td>                                                      
+                                                                </tr>
+                                                                
+                                                                <!-- Incoherent -->
+                                                                <tr>
+                                                                    <td>
+                                                                        <label for="incoherent" class="custom-control custom-checkbox custom-control-inline">
+                                                                        <input type="checkbox" id="incoherent" name="incoherent" value="incoherent" class="custom-control-input">
+                                                                            <span class="custom-control-label ml-4">Incoherent</span>
+                                                                        </label>
+                                                                    </td>                                                      
+                                                                </tr>
+                                                                
+                                                                <!-- Vertigo -->
+                                                                <tr>
+                                                                    <td>
+                                                                        <label for="vertigo" class="custom-control custom-checkbox custom-control-inline">
+                                                                        <input type="checkbox" id="vertigo" name="vertigo" value="vertigo" class="custom-control-input">
+                                                                            <span class="custom-control-label ml-4">Vertigo</span>
+                                                                        </label>
+                                                                    </td>                                                      
+                                                                </tr>
+
+                                                                 <!-- Memory Loss -->
+                                                                <tr>
+                                                                    <td>
+                                                                        <label for="memoryLoss" class="custom-control custom-checkbox custom-control-inline">
+                                                                        <input type="checkbox" id="memoryLoss" name="memoryLoss" value="memoryLoss" class="custom-control-input">
+                                                                            <span class="custom-control-label ml-4">Memory Loss</span>
+                                                                        </label>
+                                                                    </td>                                                      
+                                                                </tr>                                                                
+                                                            </tbody>
+                                                        </table>
+                                                        <!-- Others -->
+                                                        <div class="form-group mt-4">
+                                                            <label for="others">Others</label>
+                                                            <textarea name="others" id="others" class="form-control hidden-box"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>  
+                                        </div>
+                                        
+                                        <!-- Buttons -->
+                                        <div class="form-group row text-right">
+                                            <div class="col">
+                                                <button type="button" class="btn btn-space btn-secondary previous-btn">Go Back</button>
+                                                <button type="button" class="btn btn-space btn-primary next-btn">Next</button>
+                                            </div>
+                                        </div>
+                                        <!-- Buttons -->
+                                    </div>
+                                    <!-- Card Body -->
+                                </div>
+                                <!-- 4th Form -->
+
+                                <!-- 5th Form -->
+                                <div class="step step-5">
+                                    <h5 class="card-header">Screening<span class="card-index">5 / 5</span></h5>
+                                    <!-- Card Body -->
+                                    <div class="card-body">
+                                        <!-- 1st Row Start -->
+                                        <div class="form-group row">
+                                            <label class="col-12 col-sm-3 col-form-label text-sm-right">Working Diagnosis</label>
+                                            <div class="col-12 col-sm-8 col-lg-6">
+                                                <textarea type="text" class="form-control"  required></textarea>
+                                            </div>
+                                        </div>
+                                        <!-- 1st Row End -->
+
+                                        <!-- 2nd Row Start -->
+                                        <div class="form-group row">
+                                            <label class="col-12 col-sm-3 col-form-label text-sm-right">Treatment / Management</label>
+                                            <div class="col-12 col-sm-8 col-lg-6">
+                                                <textarea type="text" class="form-control"  required></textarea>
+                                            </div>
+                                        </div>
+                                        <!-- 2nd Row End -->
+
+                                        <!-- 3rd Row Start -->
+                                        <div class="form-group row">
+                                            <label class="col-12 col-sm-3 col-form-label text-sm-right">Final Advice</label>
+                                            <div class="col-12 col-sm-8 col-lg-6">
+                                                <textarea type="text" class="form-control"  required></textarea>
+                                            </div>
+                                        </div>
+                                        <!-- 3rd Row End -->
+
+                                        <!-- Buttons -->
+                                        <div class="form-group row text-right">
+                                            <div class="col">
+                                                <button type="button" class="btn btn-space btn-secondary previous-btn">Go Back</button>
+                                                <button type="button" class="btn btn-space btn-warning ">Refer to Health Institution</button>
+                                                <button type="submit" class="btn btn-space btn-primary submit-btn">Submit</button>
+                                            </div>
+                                        </div>
+                                        <!-- Buttons -->
+                                    </div>
+                                    <!-- Card Body -->
+                                </div>
+                                <!-- 5th Form -->
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!-- ============================================================== -->
+        <!-- end main wrapper -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- end main wrapper -->
+    <!-- ============================================================== -->
+    
+    <script src="assets/libs/js/multi-step-form.js"></script>
+
+    <!-- Optional JavaScript -->
+    <script src="assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="assets/vendor/slimscroll/jquery.slimscroll.js"></script>
+    <script src="assets/libs/js/main-js.js"></script>
+    <script src="assets/vendor/bootstrap-select/js/bootstrap-select.js"></script>
+
+</body>
+ 
+</html>
